@@ -10,3 +10,6 @@ keywords = ["deep-learning", "tabpfn", "tabular-data"]
 repository = "https://github.com/mert-kurttutan/tabpfn-rs"
 
 [dependencies]
+safetensors = "0.5.2"
+memmap2 = "0.9.5"
+yoke = { version = "0.7.2", features = ["derive"] }

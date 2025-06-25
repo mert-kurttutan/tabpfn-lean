@@ -10,5 +10,10 @@ requires-python = ">=3.10"
 dependencies = []
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["maturin==1.7"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "tabpfn_lean.tabpfn_lean_rs"
+profile = "release"
